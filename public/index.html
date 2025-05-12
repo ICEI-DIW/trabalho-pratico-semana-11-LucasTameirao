@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Livros Lidos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Cadastro de Livros Lidos</h1>
+
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Título do livro" required />
+      <input type="text" id="author" placeholder="Autor" required />
+      <input type="number" id="rating" placeholder="Nota (1 a 5)" min="1" max="5" required />
+      <input type="date" id="date" required />
+      <textarea id="review" placeholder="Comentário" rows="3"></textarea>
+      <button type="submit">Adicionar Livro</button>
+    </form>
+
+    <h2>📖 Livros Cadastrados</h2>
+    <div id="book-list">
+
+    </div>
+  </div>
+
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
