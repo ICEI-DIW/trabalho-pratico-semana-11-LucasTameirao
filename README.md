@@ -4,18 +4,19 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Lucas Tameirao
+- Matricula: 892759
+- Proposta de projeto escolhida: Lista de livros
+- Breve descrição sobre seu projeto: uma lista de livro lidos pelo usuario
 
 **Print do teste da API com visualização do JSON**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt-text](public/assets/images/image-3.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](public/assets/images/image.png)
+![alt text](public/assets/images/image-1.png)
 
 ## **Orientações Gerais**
 
