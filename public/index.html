@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastro de Livros Lidos</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes - home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>📚 Cadastro de Livros Lidos</h1>
 
-    <form id="book-form">
-      <input type="text" id="title" placeholder="Título do livro" required />
-      <input type="text" id="author" placeholder="Autor" required />
-      <input type="number" id="rating" placeholder="Nota (1 a 5)" min="1" max="5" required />
-      <input type="date" id="date" required />
-      <textarea id="review" placeholder="Comentário" rows="3"></textarea>
-      <button type="submit">Adicionar Livro</button>
-    </form>
-
-    <h2>📖 Livros Cadastrados</h2>
-    <div id="book-list">
-
+    <div class="container-flex">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato<a/></li>
+            </ul>
+        </nav>
+    
+        <header>
+            <div id="logo">
+                <h1><img src="imagens/logo.png" alt="Logo do site"></h1>
+                <p>CheapFlix</p>
+            </div>
+            
+            <div id="pesquisa-home">
+                <p>Barra de Pesquisa</p>
+                <input type="text">
+            </div>
+            
+        </header>
+    
+        <div id="conteudo-body">
+            <aside>
+                <div id="container-aside">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+            </aside>
+    
+            <main>
+                <div id="titulo-catalogo-filmes">
+                    <h2>Catálogo de filmes</h2>
+                </div>
+    
+                <div class="container-filmes" id="filmes-container"></div>
+            </main>
+        </div>
+        <footer>
+            <p>Copyright direitos reservados</p>
+        </footer>
     </div>
-  </div>
+    
+    <script src="app.js"></script>
 
-  <script src="assets/scripts/app.js"></script>
 </body>
 </html>
