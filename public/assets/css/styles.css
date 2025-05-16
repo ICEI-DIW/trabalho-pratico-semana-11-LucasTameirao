@@ -1,53 +1,279 @@
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: #687259;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 4%;
+  align-items: center;
+  border-bottom: 3px solid #F4ECE2;
+}
+
+nav{
+  padding: 35px;
+  background-color: #F4ECE2;
+  color: #4b5240;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: #4b5240;
+}
+
+li{
+  list-style: none;
+}
+
+aside{
+  background-color: #F4ECE2;
+}
+
+aside ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 25px;
+}
+
+aside a{
+  text-decoration: none;
+  color: #4b5240;
+  
+}
+
+header img{
+  width: 100%;
+}
+
+footer{
+  padding: 20px;
+  text-align: center;
+}
+
+.container-flex{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.capa-filme{
+  background-color: gray;
+  transition: 0.3s ease-in-out;
+}
+
+#container-main-conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#filmes-container{
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-row: 1fr;
+  grid-column: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.capa-filme{
+  background-color: gray;
+  width: 300px;
+  height: 420px;
+  transition: 0.3s ease-in-out;
+}
+
+#container-main-conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  background-color: #A2A182;
+  color: #F4ECE2;
+  padding-top: 50px;
+}
+
+#container-main-conteudo p{
+  text-align: justify;
+  padding: 20px;
+}
+
+@media all and (min-width: 768px){
+
+  header{
+      background-color: #687259;
+      display: flex;
+      flex-direction: row;
+      gap: 14%;
+      padding: 4%;
+      align-items: center;
+      border-bottom: 3px solid #F4ECE2;
+      
+  }
+  header input{
+      width: 100%;
+      height: 25px;
+  }
+
+  nav ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
   }
   
-  body {
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 20px;
+  aside{
+      background-color: #F4ECE2;
+      display: flex;
+      font-size: 25px;
+      height: 100vh;
+      width: 15%;
+  }
+  aside ul{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0;
+      list-style: none;
+  }
+  aside ul a{
+      text-decoration: none;
+      color: #687259;
+  }
+  main{
+      background-color: #A2A182;
+      color: white;
+  }
+  footer{
+      padding: 35px;
+      background-color: #687259;
+      color: white;
+      clear: both;
   }
   
-  .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  .container-filmes{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 40px;
   }
   
-  h1, h2 {
-    text-align: center;
-    color: #333;
+  
+  .container-filmes .capa-filme img{
+      width: 100%;
+      height: 100%;
   }
   
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .capa-filme{
+      background-color: gray;
+      width: 250px;
+      height: 350px;
+      transition: 0.3s ease-in-out;
   }
   
-  input, textarea, button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  .capa-filme:hover{
+      transform: translateY(-0.7%)
+      scale(1.1);
+      box-shadow: 15px 10px 15px #5b634e;
+  
   }
   
-  button {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+  .container-filme-sinopse{
+      display: flex;
+      gap: 5%;
   }
   
-  button:hover {
-    background-color: #45a049;
+  #logo{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: xx-large;
+      text-decoration: underline;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 3px;
   }
-  
-  #book-list {
-    margin-top: 20px;
+  #pesquisa-home{
+      color: white;
+      font-size: 20px;
+      width: 70%;
+      height: 20px;
   }
-  
+  #pesquisa-home p{
+      margin-bottom: 10px;
+  }
+  #pesquisa-home input{
+      font-size: 30px;
+      height: 50px;
+  }
+
+  #conteudo-body{
+      display: flex;
+      flex-direction: row;   
+  }
+
+  #container-aside{
+      width: 100%;
+  }
+
+  #titulo-catalogo-filmes{
+      display: flex;
+      justify-content: center;
+      margin: 3% 0;
+      font-size: xx-large;
+      letter-spacing: 5px;
+  }
+  #filme-destaque{
+      width: 100%;
+  }
+
+  #filmes-container{
+      padding: 10px;
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: center;
+  }
+
+  #container-main-conteudo{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+      font-size: 52px;
+  }
+
+  #container-main-conteudo img{
+      height: 900px;
+      width: 600px;
+  }
+
+  #container-main-conteudo p{
+      font-size: 30px;
+      padding: 0;
+  }
+}
