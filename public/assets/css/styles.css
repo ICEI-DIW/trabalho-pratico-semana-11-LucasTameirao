@@ -10,7 +10,7 @@ body{
 }
 
 header{
-  background-color: #687259;
+  background-color: #A2A182;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,6 +43,10 @@ aside{
   background-color: #F4ECE2;
 }
 
+main{
+  background-color: #687259;
+}
+
 aside ul{
   display: flex;
   flex-direction: column;
@@ -64,6 +68,7 @@ header img{
 footer{
   padding: 20px;
   text-align: center;
+  background-color: #A2A182;
 }
 
 .container-flex{
@@ -75,6 +80,16 @@ footer{
 .capa-filme{
   background-color: gray;
   transition: 0.3s ease-in-out;
+}
+
+#titulo-catalogo-filmes{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  letter-spacing: 5px;
+  padding: 15px;
+  text-align: center;
+  color: #F4ECE2;
 }
 
 #container-main-conteudo{
@@ -91,6 +106,7 @@ footer{
   grid-column: 1fr;
   gap: 15px;
   justify-items: center;
+  background-color: #4b5240;
 }
 
 .capa-filme{
@@ -244,6 +260,7 @@ footer{
       margin: 3% 0;
       font-size: xx-large;
       letter-spacing: 5px;
+      padding: 15px;
   }
   #filme-destaque{
       width: 100%;
